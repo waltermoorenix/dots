@@ -1,0 +1,64 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Delete">
+      <i c="1" l="1748210174237" />
+    </e>
+    <e n="$SelectAll">
+      <i c="1" l="1748210279284" />
+    </e>
+    <e n="$Undo">
+      <i c="2" l="1748210341300" />
+    </e>
+    <e n="CloseProject">
+      <i c="1" l="1748210223534" />
+    </e>
+    <e n="CreateDesktopEntry">
+      <i c="1" l="1748209979939" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="10" l="1748210518857" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="1" l="1748210335557" />
+    </e>
+    <e n="EditorEnter">
+      <i c="14" l="1748210551348" />
+    </e>
+    <e n="EditorLeft">
+      <i c="27" l="1748210421195" />
+    </e>
+    <e n="EditorRight">
+      <i c="53" l="1748210630076" />
+    </e>
+    <e n="EditorUp">
+      <i c="12" l="1748210629033" />
+    </e>
+    <e n="InsertInlineCompletionAction">
+      <i c="1" l="1748210524158" />
+    </e>
+    <e n="RenameElement">
+      <i c="1" l="1748210262329" />
+    </e>
+    <e n="RenameProject">
+      <i c="1" l="1748210685356" />
+    </e>
+    <e n="SaveAll">
+      <i c="1" l="1748210650946" />
+    </e>
+    <e n="SaveAs">
+      <i c="1" l="1748210662937" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="1" l="1748211560173" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="3" l="1748210676580" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
+      <i c="1" l="1748209971885" />
+    </e>
+    <e n="com.intellij.pycharm.community.ide.impl.miscProject.impl.PyMiscFileAction">
+      <i c="1" l="1748210025393" />
+    </e>
+  </component>
+</application>
