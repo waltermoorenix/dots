@@ -27,15 +27,22 @@ set $rofi_cmd rofi \
 # TODO: add window with the next release of rofi-wayland
 set $menu wofi --show drun  
 
+
+
+# --- THE FILE EXPLORER! I recommend either nautilus or nemo, personally I think nautilus fits nicely,
+# --- although make sure to install and use my GTK theme, guide on that is in the github README.
+set $file_explorer nautilus
+
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
-output * bg /home/vmoore/Pictures/wallpappers/beca.jpg fill
+output * bg /home/vm/Pictures/wallpapers/beca.jpg fill
 #
 # Example configuration:
 #
-#   output eDp-1 resolution 1920x1080 position 0,0
+output eDP-1 resolution 1920x1080@60.049Hz position 0,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -78,6 +85,10 @@ output * bg /home/vmoore/Pictures/wallpappers/beca.jpg fill
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+
+    #explorer
+    bindsym $mod+e exec $file_explorer
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -143,6 +154,40 @@ output * bg /home/vmoore/Pictures/wallpappers/beca.jpg fill
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 #
+
+
+# ===================== BORDERS & GAPS ============================
+
+# Gaps between windows
+gaps inner 4px
+gaps outer 4px
+
+# Border width, I prefer THIN borders ^-^
+default_border pixel 1px
+default_floating_border pixel 1px
+
+
+# The border colors:
+
+#                         border    bg        text      ind       child border
+client.focused          #d8cab8 #141216 #d8cab8 #d8cab8 #d8cab8
+client.focused_inactive #AC82E9 #141216 #d8cab8 #AC82E9 #AC82E9
+client.unfocused        #AC82E9 #141216 #d8cab8 #AC82E9 #AC82E9
+client.urgent           #fcb167 #141216 #d8cab8 #fcb167 #fcb167
+client.placeholder      #AC82E9 #141216 #d8cab8 #AC82E9 #AC82E9
+
+# =================================================================
+
+
+
+
+
+
+
+
+
+
+
 # Layout stuff:
 #
     # You can "split" the current object of your focus with
@@ -154,7 +199,7 @@ output * bg /home/vmoore/Pictures/wallpappers/beca.jpg fill
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    #bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -238,4 +283,3 @@ include /etc/sway/config.d/*
 # the trick, it's all in the `wordexp(3)`.
 #
 include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
-
