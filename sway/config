@@ -41,7 +41,8 @@ set $file_explorer nautilus
 output * bg /home/vm/Pictures/wallpapers/beca.jpg fill
 #
 # Example configuration:
-#
+# output HDMI-A-1 resolution 1920x1080@119.997Hz position 0,0
+#  output eDP-1 resolution 1920x1080@144.023Hz position 0,0
 output eDP-1 resolution 1920x1080@60.049Hz position 0,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
